@@ -22,7 +22,9 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:prettier/recommended',
       ],
-      rules:{}
+      rules: {
+        'no-console': 'error',
+      },
     },
   ],
   settings: {
