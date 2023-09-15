@@ -1,0 +1,66 @@
+{
+  "name": "react-scaffold",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "fix": "prettier --write src/*.tsx src/**/*.tsx"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": [
+      "eslint --ext .js,.ts,.jsx,.tsx --fix",
+      "prettier --write"
+    ],
+    "*.{html,css,less,scss,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "antd": "^5.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.11",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-angular": "^17.7.0",
+    "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "babel-eslint": "^10.1.0",
+    "consola": "^3.2.3",
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-custom-alias": "^1.3.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.3",
+    "less": "^4.2.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-style-import": "^2.0.0"
+  }
+}
