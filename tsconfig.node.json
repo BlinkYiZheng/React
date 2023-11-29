@@ -4,7 +4,9 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",  // 添加这一行
+    "target": "ESNext"  // 添加这一行，确保编译的JavaScript版本是ESNext或其他合适的版本
   },
   "include": ["vite.config.ts"]
 }

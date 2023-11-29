@@ -1,0 +1,35 @@
+.title {
+  color: blue;
+  text-align: center;
+}
+.custom-tab-pane {
+  width: 100%;
+}
+.custom-tab-pane .ant-tabs-nav-wrap {
+  display: flex;
+}
+.custom-tab-pane .ant-tabs-nav {
+  width: 100%;
+  display: flex;
+}
+.custom-tab-pane .ant-tabs-tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.homepage-footer {
+  position: fixed;  /* 可以改用 sticky, 如果你希望在页面内容滚动时footer不动 */
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}

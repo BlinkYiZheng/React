@@ -1,0 +1,21 @@
+.tabbar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabbar-container button {
+    flex: 1;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tabbar-container button.active {
+    background-color: #ddd;
+  }
+  
